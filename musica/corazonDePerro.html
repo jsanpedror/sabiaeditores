@@ -114,113 +114,161 @@
          REPRODUCTOR
          ===================================================== -->
 
-    <section class="youtube-player-section">
+    <div class="album-player">
 
-  <h2>Escuchar</h2>
+          <p class="now-playing">
 
+            Escuchando:
 
-  <div class="track">
+            <strong id="current-track">
 
-    <h3>01. El ángel de la guarda</h3>
+              Ángel
 
-    <div class="youtube-player">
-      <iframe
-        src="https://www.youtube.com/embed/4Z-jSdtbgqw"
-        title="Ángel — Los Impulsivos"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
+            </strong>
 
-  </div>
+          </p>
 
+          <audio
 
-  <div class="track">
+            id="audio-player"
 
-    <h3>02. Corazón de perro</h3>
+            controls
 
-    <div class="youtube-player">
-      <iframe
-        src="https://www.youtube.com/embed/DOTO5mXri9k"
-        title="Corazón — Los Impulsivos"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
+            preload="metadata"
 
-  </div>
+          >
 
+            <source
 
-  <div class="track">
+              src="corazonDePerro/Angel.mp3"
 
-    <h3>03. Deportivo Aragón</h3>
+              type="audio/mpeg"
 
-    <div class="youtube-player">
-      <iframe
-        src="https://www.youtube.com/embed/tcQ_cGr3gm4"
-        title="Deportivo — Los Impulsivos"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
+            >
 
-  </div>
+            Tu navegador no soporta la reproducción de audio.
 
+          </audio>
 
-  <div class="track">
+        </div>
 
-    <h3>04. Me ha sangrado la nariz</h3>
+        <!-- =========================================
 
-    <div class="youtube-player">
-      <iframe
-        src="https://www.youtube.com/embed/ttQFHsJu90w"
-        title="Me ha — Los Impulsivos"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
+             TRACKLIST
 
-  </div>
+             ========================================= -->
 
+        <div class="album-tracklist">
 
-  <div class="track">
+          <button
 
-    <h3>05. La punk</h3>
+            class="track-button active-track"
 
-    <div class="youtube-player">
-      <iframe
-        src="https://www.youtube.com/embed/X8sby5OswHI"
-        title="La punk — Los Impulsivos"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
+            data-src="corazonDePerro/Angel.mp3"
 
-  </div>
+            data-title="Ángel"
 
+          >
 
-  <div class="track">
+            <span class="track-number">01</span>
 
-    <h3>06. Sin ti mamá</h3>
+            <span class="track-title">Ángel</span>
 
-    <div class="youtube-player">
-      <iframe
-        src="https://www.youtube.com/embed/vcEwpH394Qg"
-        title="Sin ti — Los Impulsivos"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
+            <span class="track-play">▶</span>
 
-  </div>
+          </button>
 
-</section>
+          <button
+
+            class="track-button"
+
+            data-src="corazonDePerro/Corazon.mp3"
+
+            data-title="Corazón"
+
+          >
+
+            <span class="track-number">02</span>
+
+            <span class="track-title">Corazón</span>
+
+            <span class="track-play">▶</span>
+
+          </button>
+
+          <button
+
+            class="track-button"
+
+            data-src="corazonDePerro/Deportivo.mp3"
+
+            data-title="Deportivo"
+
+          >
+
+            <span class="track-number">03</span>
+
+            <span class="track-title">Deportivo</span>
+
+            <span class="track-play">▶</span>
+
+          </button>
+
+          <button
+
+            class="track-button"
+
+            data-src="corazonDePerro/Me ha.mp3"
+
+            data-title="Me ha"
+
+          >
+
+            <span class="track-number">04</span>
+
+            <span class="track-title">Me ha</span>
+
+            <span class="track-play">▶</span>
+
+          </button>
+
+          <button
+
+            class="track-button"
+
+            data-src="corazonDePerro/La punk.mp3"
+
+            data-title="La punk"
+
+          >
+
+            <span class="track-number">05</span>
+
+            <span class="track-title">La punk</span>
+
+            <span class="track-play">▶</span>
+
+          </button>
+
+          <button
+
+            class="track-button"
+
+            data-src="corazonDePerro/Sin ti.mp3"
+
+            data-title="Sin ti"
+
+          >
+
+            <span class="track-number">06</span>
+
+            <span class="track-title">Sin ti</span>
+
+            <span class="track-play">▶</span>
+
+          </button>
+
+        </div>
 
 
 

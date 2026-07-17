@@ -570,3 +570,89 @@ footer {
   cursor: default;
   pointer-events: none;
 }
+/* ---------- Album Audio Player ---------- */
+
+.album-player {
+  margin: 32px 0;
+}
+
+.now-playing {
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+}
+
+#audio-player {
+  width: 100%;
+}
+
+
+/* ---------- Album Tracklist ---------- */
+
+.album-tracklist {
+  margin: 24px 0 32px;
+  border-top: 1px solid var(--line);
+}
+
+.track-button {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40px 1fr 30px;
+  align-items: center;
+  gap: 12px;
+
+  padding: 14px 0;
+
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+
+  font: inherit;
+  color: inherit;
+  text-align: left;
+
+  cursor: pointer;
+}
+
+.track-button:hover {
+  opacity: 0.6;
+}
+
+.track-number {
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+.track-title {
+  font-weight: 600;
+}
+
+.track-play {
+  text-align: right;
+  font-size: 0.8rem;
+}
+
+
+/* ---------- Active Track ---------- */
+
+.track-button.active-track {
+  font-weight: 700;
+}
+
+.track-button.active-track .track-number {
+  opacity: 1;
+}
+
+.track-button.active-track .track-play {
+  transform: scale(1.2);
+}
+
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 700px) {
+
+  .track-button {
+    grid-template-columns: 32px 1fr 24px;
+  }
+
+}

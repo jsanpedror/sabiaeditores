@@ -3,14 +3,15 @@ const currentTrack = document.getElementById("current-track");
 const trackButtons = document.querySelectorAll(".track-button");
 
 trackButtons.forEach((button) => {
-
   button.addEventListener("click", () => {
-
     const source = button.dataset.src;
     const title = button.dataset.title;
 
     // Change the audio source
     audioPlayer.src = source;
+
+    // Reload the new track
+    audioPlayer.load();
 
     // Update the track title
     currentTrack.textContent = title;
@@ -25,7 +26,5 @@ trackButtons.forEach((button) => {
 
     // Play the selected song
     audioPlayer.play();
-
   });
-
 });
